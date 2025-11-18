@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 
 type Theme = 'light' | 'dark' | 'system';
 
@@ -8,26 +8,27 @@ export function useTheme() {
     return stored || 'system';
   });
 
-  const [resolvedTheme, setResolvedTheme] = useState<'light' | 'dark'>(() => {
+  const [systemPreference, setSystemPreference] = useState<'light' | 'dark'>(() => {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+
+  const resolvedTheme = useMemo<'light' | 'dark'>(() => {
     if (theme === 'system') {
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      return systemPreference;
     }
     return theme;
-  });
+  }, [theme, systemPreference]);
 
   useEffect(() => {
     if (theme === 'system') {
       const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
       const handleChange = (e: MediaQueryListEvent) => {
-        setResolvedTheme(e.matches ? 'dark' : 'light');
+        setSystemPreference(e.matches ? 'dark' : 'light');
       };
       
-      setResolvedTheme(mediaQuery.matches ? 'dark' : 'light');
       mediaQuery.addEventListener('change', handleChange);
       
       return () => mediaQuery.removeEventListener('change', handleChange);
-    } else {
-      setResolvedTheme(theme);
     }
   }, [theme]);
 
