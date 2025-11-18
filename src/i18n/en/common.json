@@ -23,7 +23,12 @@
   },
   "skills": {
     "title": "Skills",
-    "subtitle": "Technologies I master"
+    "subtitle": "Technologies I master",
+    "categories": {
+      "languages": "Languages",
+      "toolsFrameworks": "Tools / Frameworks",
+      "softSkills": "Soft Skills"
+    }
   },
   "contact": {
     "title": "Contact",

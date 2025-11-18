@@ -57,7 +57,7 @@ export default function Navbar() {
               onClick={() => scrollToSection('about')}
               className="text-xl font-bold text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
-              Portfolio
+              Axel TREPOUT
             </button>
             <div className="hidden md:flex space-x-6">
               {navLinks.map((link) => (

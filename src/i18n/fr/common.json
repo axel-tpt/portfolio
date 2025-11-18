@@ -23,7 +23,12 @@
   },
   "skills": {
     "title": "Compétences",
-    "subtitle": "Technologies que je maîtrise"
+    "subtitle": "Technologies que je maîtrise",
+    "categories": {
+      "languages": "Langages",
+      "toolsFrameworks": "Outils / Frameworks",
+      "softSkills": "Compétences comportementales"
+    }
   },
   "contact": {
     "title": "Contact",
