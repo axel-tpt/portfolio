@@ -27,11 +27,7 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Restons en contact",
-    "name": "Nom",
-    "email": "Email",
-    "message": "Message",
-    "send": "Envoyer"
+    "subtitle": "Restons en contact"
   },
   "footer": {
     "rights": "Tous droits réservés"

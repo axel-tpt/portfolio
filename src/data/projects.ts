@@ -15,7 +15,7 @@ export const projects: Project[] = [
     description_fr: 'Une description détaillée du projet en français.',
     description_en: 'A detailed project description in English.',
     technologies: ['React', 'TypeScript', 'TailwindCSS'],
-    link: 'https://example.com',
+    link: 'http://example.com',
     image: 'https://via.placeholder.com/400x300',
   },
   {
