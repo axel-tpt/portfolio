@@ -1,6 +1,6 @@
 import Container from '../components/ui/Container';
 import SectionTitle from '../components/ui/SectionTitle';
-import Card from '../components/ui/Card';
+import AnimatedCard from '../components/ui/AnimatedCard';
 import { contactInfo } from '../data/contact';
 
 export default function Contact() {
@@ -47,7 +47,7 @@ export default function Contact() {
         <SectionTitle titleKey="contact.title" subtitleKey="contact.subtitle" />
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {contactLinks.map((link) => (
+            {contactLinks.map((link, index) => (
               <a
                 key={link.name}
                 href={link.url}
@@ -55,7 +55,7 @@ export default function Contact() {
                 rel={link.name === 'Email' ? undefined : 'noopener noreferrer'}
                 className="block"
               >
-                <Card hover className="text-center h-full flex flex-col items-center justify-center p-8">
+                <AnimatedCard hover delay={index * 100} className="text-center h-full flex flex-col items-center justify-center p-8">
                   <div className={`${link.bgColor} ${link.color} p-4 rounded-full mb-4`}>
                     {link.icon}
                   </div>
@@ -65,7 +65,7 @@ export default function Contact() {
                   <p className="text-sm text-gray-600 dark:text-gray-400 break-all">
                     {link.url.replace(/^https?:\/\//, '').replace(/^mailto:/, '')}
                   </p>
-                </Card>
+                </AnimatedCard>
               </a>
             ))}
           </div>

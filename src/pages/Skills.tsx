@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import Container from '../components/ui/Container';
 import SectionTitle from '../components/ui/SectionTitle';
-import Card from '../components/ui/Card';
+import AnimatedCard from '../components/ui/AnimatedCard';
 import { skillsData } from '../data/skills';
 
 interface SkillCategoryProps {
@@ -38,24 +38,24 @@ export default function Skills() {
         <SectionTitle titleKey="skills.title" subtitleKey="skills.subtitle" />
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <Card>
+            <AnimatedCard delay={0}>
               <SkillCategory
                 title={t('skills.categories.languages')}
                 skills={skillsData.languages}
               />
-            </Card>
-            <Card>
+            </AnimatedCard>
+            <AnimatedCard delay={150}>
               <SkillCategory
                 title={t('skills.categories.toolsFrameworks')}
                 skills={skillsData.toolsFrameworks}
               />
-            </Card>
-            <Card>
+            </AnimatedCard>
+            <AnimatedCard delay={300}>
               <SkillCategory
                 title={t('skills.categories.softSkills')}
                 skills={skillsData.softSkills}
               />
-            </Card>
+            </AnimatedCard>
           </div>
         </div>
       </Container>

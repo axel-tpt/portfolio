@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import Container from '../components/ui/Container';
 import SectionTitle from '../components/ui/SectionTitle';
-import Card from '../components/ui/Card';
+import AnimatedCard from '../components/ui/AnimatedCard';
 import { projects } from '../data/projects';
 
 export default function Projects() {
@@ -13,15 +13,15 @@ export default function Projects() {
       <Container>
         <SectionTitle titleKey="projects.title" subtitleKey="projects.subtitle" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project) => (
-          <Card key={project.id} hover className="flex flex-col">
+        {projects.map((project, index) => (
+          <AnimatedCard key={project.id} hover delay={index * 100} className="flex flex-col">
             <img
               src={project.image}
-              alt={project.title}
+              alt={currentLang === 'fr' ? project.title_fr : project.title_en}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
             <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">
-              {project.title}
+              {currentLang === 'fr' ? project.title_fr : project.title_en}
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
               {currentLang === 'fr' ? project.description_fr : project.description_en}
@@ -49,7 +49,7 @@ export default function Projects() {
             >
               {t('projects.viewProject')}
             </a>
-          </Card>
+          </AnimatedCard>
         ))}
       </div>
       </Container>

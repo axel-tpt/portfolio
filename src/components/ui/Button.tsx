@@ -1,19 +1,26 @@
-import type { ButtonHTMLAttributes, ReactNode } from 'react';
+import type { ButtonHTMLAttributes, AnchorHTMLAttributes, ReactNode } from 'react';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface BaseButtonProps {
   children: ReactNode;
   variant?: 'primary' | 'secondary' | 'outline';
   size?: 'sm' | 'md' | 'lg';
+  as?: 'button' | 'a';
 }
+
+type ButtonProps = BaseButtonProps & (
+  | (ButtonHTMLAttributes<HTMLButtonElement> & { as?: 'button' })
+  | (AnchorHTMLAttributes<HTMLAnchorElement> & { as: 'a' })
+);
 
 export default function Button({
   children,
   variant = 'primary',
   size = 'md',
   className = '',
+  as = 'button',
   ...props
 }: ButtonProps) {
-  const baseStyles = 'font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2';
+  const baseStyles = 'font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 inline-block text-center';
   
   const variants = {
     primary: 'bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-500',
@@ -27,10 +34,23 @@ export default function Button({
     lg: 'px-6 py-3 text-lg',
   };
 
+  const classes = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
+
+  if (as === 'a') {
+    return (
+      <a
+        className={classes}
+        {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
     <button
-      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
-      {...props}
+      className={classes}
+      {...(props as ButtonHTMLAttributes<HTMLButtonElement>)}
     >
       {children}
     </button>

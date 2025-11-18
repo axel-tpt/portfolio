@@ -9,7 +9,9 @@
   "about": {
     "title": "About Me",
     "subtitle": "Passionate Developer",
-    "description": "I am a passionate developer who loves creating innovative and performant solutions."
+    "greeting": "Hi, I'm",
+    "connectLinkedIn": "Connect on LinkedIn",
+    "viewGitHub": "View GitHub"
   },
   "projects": {
     "title": "My Projects",
