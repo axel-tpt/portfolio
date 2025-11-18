@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Passionate Developer",
+    "description": "I am a passionate developer who loves creating innovative and performant solutions."
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Discover my work",
+    "viewProject": "View Project",
+    "technologies": "Technologies"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies I master"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's stay in touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}
+
