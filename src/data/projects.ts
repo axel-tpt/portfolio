@@ -1,3 +1,6 @@
+import shopifakeDashboard from '../assets/projects/shopifake-dashboard.png';
+import mcpLogo from '../assets/projects/mcp-logo.png';
+
 export interface Project {
   id: string;
   title_fr: string;
@@ -22,23 +25,23 @@ export const projects: Project[] = [
   },
   {
     id: '2',
-    title_fr: 'Projet DevOps',
-    title_en: 'DevOps Project',
+    title_fr: 'Shopifake',
+    title_en: 'Shopifake',
     description_fr: 'Création et déploiement d\'une application web type Shopify.',
     description_en: 'Creation and deployment of a Shopify-like web application.',
     technologies: ['Spring Boot', 'Kubernetes', 'Docker', 'SonarQube'],
     link: 'http://shopifake.com',
-    image: 'https://via.placeholder.com/400x300',
+    image: shopifakeDashboard,
   },
   {
     id: '3',
-    title_fr: 'Project 3',
-    title_en: 'Project 3',
-    description_fr: 'Encore une description de projet en français.',
-    description_en: 'Yet another project description in English.',
-    technologies: ['Next.js', 'TypeScript', 'PostgreSQL'],
-    link: 'https://example.com',
-    image: 'https://via.placeholder.com/400x300',
+    title_fr: 'MCP',
+    title_en: 'MCP',
+    description_fr: 'Un service MCP en Scala capable d’analyser des fichiers localement pour détecter des signatures malveillantes et des comportements suspects grâce à un moteur heuristique léger.',
+    description_en: 'An MCP service in Scala capable of analyzing files locally to detect malicious signatures and suspicious behaviors thanks to a lightweight heuristic engine.',
+    technologies: ['Scala', 'MCP', 'Heuristic Engine'],
+    link: 'https://github.com/axel-tpt/',
+    image: mcpLogo,
   },
 ];
 
