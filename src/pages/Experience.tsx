@@ -15,9 +15,9 @@ export default function Experience() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {experiences.map((exp, index) => (
-              <AnimatedCard key={index} delay={index * 150} className="h-full flex flex-col">
+              <AnimatedCard key={index} delay={index * 150} hover className="h-full flex flex-col">
                 <div className="mb-4">
-                  <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">
+                  <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100 hover-accent-text">
                     {currentLang === 'fr' ? exp.title.fr : exp.title.en}
                   </h3>
                   <p className="text-base text-gray-700 dark:text-gray-300 mb-1">

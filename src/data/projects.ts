@@ -26,7 +26,7 @@ export const projects: Project[] = [
     title_en: 'DevOps Project',
     description_fr: 'Création et déploiement d\'une application web type Shopify.',
     description_en: 'Creation and deployment of a Shopify-like web application.',
-    technologies: ['Vue.js', 'Node.js', 'MongoDB'],
+    technologies: ['Spring Boot', 'Kubernetes', 'Docker', 'SonarQube'],
     link: 'http://shopifake.com',
     image: 'https://via.placeholder.com/400x300',
   },

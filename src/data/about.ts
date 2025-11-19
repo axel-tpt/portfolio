@@ -30,7 +30,7 @@ export const aboutData = {
     en: '5th Year Engineering Student specializing in Software Engineering & Management',
   },
   description: {
-    fr: 'Passionné par l\'intégration IA, le développement full-stack et la création de solutions impactantes.',
-    en: 'Passionate about AI integration, full-stack development, and creating impactful solutions.',
+    fr: 'Passionné par l\'intégration IA, le développement full-stack et la cybersécurité.',
+    en: 'Passionate about AI integration, full-stack development and cybersecurity.',
   },
 };

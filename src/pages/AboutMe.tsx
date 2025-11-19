@@ -18,12 +18,12 @@ export default function AboutMe() {
               {/* Left side - Text content */}
               <div className="text-left">
                 <div className="mb-6">
-                  <span className="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-sm font-semibold rounded-full">
+                  <span className="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-sm font-semibold rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                     {currentLang === 'fr' ? aboutData.status.fr : aboutData.status.en}
                   </span>
                 </div>
                 
-                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+                <h2 className="hover-accent-text text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100 inline-block">
                   {t('about.greeting')} {aboutData.name}
                 </h2>
                 
