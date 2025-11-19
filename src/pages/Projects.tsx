@@ -20,7 +20,7 @@ export default function Projects() {
               alt={currentLang === 'fr' ? project.title_fr : project.title_en}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
-            <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">
+            <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-300">
               {currentLang === 'fr' ? project.title_fr : project.title_en}
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow">
@@ -34,7 +34,7 @@ export default function Projects() {
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs rounded"
+                    className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs rounded transition-transform duration-200 hover:-translate-y-0.5"
                   >
                     {tech}
                   </span>
