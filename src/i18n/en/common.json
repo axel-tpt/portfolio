@@ -38,6 +38,13 @@
   },
   "footer": {
     "rights": "All rights reserved"
+  },
+  "construction": {
+    "badge": "Site under construction",
+    "title": "I'm refreshing this space",
+    "description": "I'm currently polishing the experience. In the meantime, feel free to reach out and I'll gladly share my work with you.",
+    "contact": "Email me",
+    "linkedin": "Visit my LinkedIn"
   }
 }
 

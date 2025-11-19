@@ -38,6 +38,13 @@
   },
   "footer": {
     "rights": "Tous droits réservés"
+  },
+  "construction": {
+    "badge": "Site en construction",
+    "title": "Je remets ce site à neuf",
+    "description": "Je travaille actuellement sur une nouvelle version. En attendant, contactez-moi et je vous enverrai mes projets avec plaisir.",
+    "contact": "M'écrire",
+    "linkedin": "Voir mon LinkedIn"
   }
 }
 
