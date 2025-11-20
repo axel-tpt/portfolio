@@ -41,14 +41,23 @@ export default function Projects() {
                 ))}
               </div>
             </div>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-200"
-            >
-              {t('projects.viewProject')}
-            </a>
+            {project.link ? (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-200"
+              >
+                {t('projects.viewProject')}
+              </a>
+            ) : (
+              <button
+                disabled
+                className="inline-block text-center px-4 py-2 bg-gray-400 dark:bg-gray-600 text-white rounded-lg cursor-not-allowed opacity-60"
+              >
+                {t('projects.viewProject')}
+              </button>
+            )}
           </AnimatedCard>
         ))}
       </div>

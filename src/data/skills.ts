@@ -1,6 +1,5 @@
 export interface Skill {
   name: string;
-  level: number;
 }
 
 export interface SkillsData {
@@ -11,23 +10,28 @@ export interface SkillsData {
 
 export const skillsData: SkillsData = {
   languages: [
-    { name: 'TypeScript', level: 90 },
-    { name: 'JavaScript', level: 85 },
-    { name: 'Python', level: 80 },
-    { name: 'Java', level: 75 },
+    { name: 'TypeScript' },
+    { name: 'JavaScript' },
+    { name: 'Python' },
+    { name: 'Java' },
+    { name: 'C#' },
   ],
   toolsFrameworks: [
-    { name: 'React', level: 90 },
-    { name: 'Node.js', level: 85 },
-    { name: 'TailwindCSS', level: 85 },
-    { name: 'PostgreSQL', level: 75 },
-    { name: 'Git', level: 90 },
+    { name: 'React' },
+    { name: 'Node.js' },
+    { name: 'TailwindCSS' },
+    { name: 'PostgreSQL' },
+    { name: 'Git' },
+    { name: 'Docker' },
+    { name: 'Kubernetes' },
+    { name: 'Spring Boot' },
   ],
   softSkills: [
-    { name: 'Communication', level: 90 },
-    { name: 'Teamwork', level: 85 },
-    { name: 'Problem Solving', level: 90 },
-    { name: 'Adaptability', level: 85 },
+    { name: 'Communication' },
+    { name: 'Teamwork' },
+    { name: 'Problem Solving' },
+    { name: 'Adaptability' },
+    { name: 'Creativity' },
   ],
 };
 

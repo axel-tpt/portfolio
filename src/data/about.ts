@@ -1,3 +1,5 @@
+import profilePicture from '../assets/photo-cv.jpg';
+
 // Types de statuts disponibles
 export type StatusType = 'available-for-internship' | 'open-to-work' | 'currently-working';
 
@@ -33,4 +35,5 @@ export const aboutData = {
     fr: 'Passionné par l\'intégration IA, le développement full-stack et la cybersécurité.',
     en: 'Passionate about AI integration, full-stack development and cybersecurity.',
   },
+  image: profilePicture,
 };

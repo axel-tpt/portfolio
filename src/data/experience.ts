@@ -50,7 +50,7 @@ export const experiences: Experience[] = [
         'Teamwork in an international context',
       ],
     },
-    link: 'https://play.google.com/store/apps/details?id=...', // Remplacez par votre lien Google Play
+    link: 'https://play.google.com/store/apps/dev?id=5463305023194409133',
     linkLabel: {
       fr: 'Voir sur Google Play',
       en: 'View on Google Play',
@@ -58,34 +58,27 @@ export const experiences: Experience[] = [
   },
   {
     title: {
-      fr: 'Stage en recherche à Ulster University : Développement d\'application & IA générative',
-      en: 'Research Internship at Ulster University: Application Development & Generative AI',
+      fr: 'Stage d\'agent de maintenance des systèmes vidéo chez VOGO',
+      en: 'Video Systems Maintenance Agent Internship at VOGO',
     },
-    company: 'Ulster University',
+    company: 'VOGO',
     position: {
-      fr: 'Stagiaire en recherche',
-      en: 'Research Intern',
+      fr: 'Stagiaire agent de maintenance des systèmes vidéo',
+      en: 'Video Systems Maintenance Agent Intern',
     },
     period: {
-      fr: 'Avril à Août 2025',
-      en: 'April to August 2025',
+      fr: 'Juillet 2022',
+      en: 'July 2022',
     },
     description: {
       fr: [
-        'Développement de jeux éducatifs en C# avec Unity avec intégration de l\'IA dans le processus de conception et de développement',
-        'Mise en production sur les plateformes d\'application : Play Store, App Store et Amazon Store',
-        'Travail en équipe dans un contexte international',
+        'Entreprise distribuant des solutions audiovisuelles en France pour des événements sportifs, en particulier pour le rugby',
+        'Maintenance du réseau',
       ],
       en: [
-        'Development of educational games in C# with Unity with AI integration in the design and development process',
-        'Deployment on application platforms: Play Store, App Store and Amazon Store',
-        'Teamwork in an international context',
+        'Company distributing audiovisual solutions in France for sporting events, particularly for rugby',
+        'Network maintenance',
       ],
-    },
-    link: 'https://play.google.com/store/apps/details?id=...', // Remplacez par votre lien Google Play
-    linkLabel: {
-      fr: 'Voir sur Google Play',
-      en: 'View on Google Play',
     },
   },
 ];

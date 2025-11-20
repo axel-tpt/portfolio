@@ -1,3 +1,4 @@
+import dataScience from '../assets/projects/data-science.jpeg';
 import shopifakeDashboard from '../assets/projects/shopifake-dashboard.png';
 import mcpLogo from '../assets/projects/mcp-logo.png';
 
@@ -19,9 +20,9 @@ export const projects: Project[] = [
     title_en: 'AI-based Groundwater Prediction',
     description_fr: 'Modèle de machine learning (LSTM) formé sur les données de pluie et de niveaux piézométriques pour prédire les niveaux d\'eau souterraine.',
     description_en: 'Machine learning model (LSTM) trained on rainfall & piezometric data to forecast groundwater levels.',
-    technologies: ['TensorFlow', 'Keras', 'Python'],
+    technologies: ['TensorFlow', 'Keras', 'Python', 'Pandas', 'Matplotlib'],
     link: '',
-    image: 'https://via.placeholder.com/400x300',
+    image: dataScience,
   },
   {
     id: '2',
@@ -40,7 +41,7 @@ export const projects: Project[] = [
     description_fr: 'Un service MCP en Scala capable d’analyser des fichiers localement pour détecter des signatures malveillantes et des comportements suspects grâce à un moteur heuristique léger.',
     description_en: 'An MCP service in Scala capable of analyzing files locally to detect malicious signatures and suspicious behaviors thanks to a lightweight heuristic engine.',
     technologies: ['Scala', 'MCP', 'Heuristic Engine'],
-    link: 'https://github.com/axel-tpt/',
+    link: '',
     image: mcpLogo,
   },
 ];
